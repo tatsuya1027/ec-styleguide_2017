@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*
+---
+name: text
+category: utilities/text
+---
+
+text-(ブレイクポイント※)-(方向)<br>
+※必須ではない
+
+```html
+<div class="text-group">
+  <p class="text-sm-center">sm以上は中央揃え</p>
+  <p class="text-md-right">md以上は右揃え</p>
+  <p class="text-right text-lg-left">右揃え、lg以上は左揃え</p>
+</div>
+```
+*/
+
+.text-group p {
+  &:nth-of-type(odd) { background-color: #ddd; }
+  &:nth-of-type(even) { background-color: #aaa; }
+}

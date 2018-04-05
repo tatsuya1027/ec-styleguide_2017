@@ -1,0 +1,572 @@
+@charset "utf-8";
+
+/*
+---
+name: block - 1カラム（4-8）
+category: modules/block
+---
+
+```html
+<!-- 商品名 -->
+<div class="c-block" data-ico="new">
+  <div class="row-0">
+    <div class="col-md-4">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="c-block__badge-row">
+        <p class="c-block__badge" data-color="red">数量限定</p>
+        <p class="c-block__badge" data-color="red">期間限定</p>
+        <p class="c-block__badge" data-color="blue">ネスレ通販限定</p>
+      </div>
+      <p class="c-block__name">商品名<br class="hidden-md-down" /></p>
+      <p class="c-block__desc">
+        <strong>商品説明文</strong><br />
+        <b>商品説明文</b><br />
+        商品説明文
+      </p>
+      <ul class="c-block__list">
+        <li>・商品</li>
+        <li>・商品</li>
+        <li>・商品</li>
+      </ul>
+      <p class="c-block__price-before">▼単品価格 <del>99,999</del>円（税込）</p>
+      <div class="c-block__price-row">
+        <p class="c-block__price-qty">1箱</p>
+        <p class="c-block__price-head">特別価格</p>
+        <div class="c-price" data-type="sale"><strong>77,777</strong>円<sup>（税込）</sup></div>
+        <div class="c-block__price-off">
+          <span><strong>50</strong>%</span>OFF
+        </div>
+        <div class="c-block__price-fs">
+          <img src="../../../aigis_assets/img/ico_fs.png" alt="送料無料">
+        </div>
+        <p class="c-block__price-point">＋ <strong>ポイント10%</strong></p>
+      </div>
+      <p class="c-block__price-one"><b>1杯あたり約77円</b>（1杯2gで換算）</p>
+      <p class="c-block__note">※注意書き</p>
+    </div>
+  </div>
+  <div class="c-block__foot" data-bg="lgray">
+    <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+      商品購入はこちら
+    </a>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: block - 1カラム（4-8 / price-2row）
+category: modules/block
+---
+
+```html
+<!-- 商品名 -->
+<div class="c-block" data-ico="new">
+  <div class="row-0">
+    <div class="col-md-4">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-8">
+      <p class="c-block__name">商品名<br class="hidden-md-down" /></p>
+      <p class="c-block__price-before offset-lg-3">▼単品価格 <del>99,999</del>円（税込）</p>
+      <div class="c-block__price-row">
+        <p class="c-block__price-qty col-12 col-lg-3">1箱</p>
+        <p class="c-block__price-head">特別価格</p>
+        <div class="c-price" data-type="sale"><strong>7,777</strong>円<sup>（税込）</sup></div>
+        <div class="c-block__price-off">
+          <span><strong>50</strong>%</span>OFF
+        </div>
+      </div>
+      <div class="c-block__price-row">
+        <p class="c-block__price-qty col-12 col-lg-3">1ケース(6箱)以上の<br class="hidden-lg-up hidden-md-down" />ご購入で、1箱あたり</p>
+        <p class="c-block__price-head">特別価格</p>
+        <div class="c-price" data-type="sale"><strong>777</strong>円<sup>（税込）</sup></div>
+        <div class="c-block__price-off" data-type="special">
+          <span><strong>70</strong>%</span>OFF
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-block__foot" data-bg="lgray">
+    <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+      商品購入はこちら
+    </a>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: block - 1カラム（6-6）
+category: modules/block
+---
+
+```html
+<!-- 商品名 -->
+<div class="c-block" data-ico="new">
+  <div class="row-0">
+    <div class="col-md-6">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="c-block__badge-row">
+        <p class="c-block__badge" data-color="red">数量限定</p>
+        <p class="c-block__badge" data-color="red">期間限定</p>
+        <p class="c-block__badge" data-color="blue">ネスレ通販限定</p>
+      </div>
+      <p class="c-block__name">商品名<br class="hidden-md-down" /></p>
+      <p class="c-block__desc">
+        <strong>商品説明文</strong><br />
+        <b>商品説明文</b><br />
+        商品説明文
+      </p>
+      <ul class="c-block__list">
+        <li>・商品</li>
+        <li>・商品</li>
+        <li>・商品</li>
+      </ul>
+      <p class="c-block__price-before">▼単品価格 <del>99,999</del>円（税込）</p>
+      <div class="c-block__price-row">
+        <p class="c-block__price-qty">1箱</p>
+        <p class="c-block__price-head">特別価格</p>
+        <div class="c-price" data-type="sale"><strong>77,777</strong>円<sup>（税込）</sup></div>
+        <div class="c-block__price-off">
+          <span><strong>50</strong>%</span>OFF
+        </div>
+        <div class="c-block__price-fs">
+          <img src="../../../aigis_assets/img/ico_fs.png" alt="送料無料">
+        </div>
+      </div>
+      <p class="c-block__price-one"><b>1杯あたり約77円</b>（1杯2gで換算）</p>
+      <p class="c-block__note">※注意書き</p>
+    </div>
+  </div>
+  <div class="c-block__foot" data-bg="lgray">
+    <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+      商品購入はこちら
+    </a>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: block - 1カラム（6-6 / price-3col）
+category: modules/block
+---
+
+```html
+<!-- 商品名 -->
+<div class="c-block" data-ico="new">
+  <div class="row-0">
+    <div class="col-md-6">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="c-block__badge-row">
+        <p class="c-block__badge" data-color="red">数量限定</p>
+        <p class="c-block__badge" data-color="red">期間限定</p>
+        <p class="c-block__badge" data-color="blue">ネスレ通販限定</p>
+      </div>
+      <p class="c-block__name">商品名<br class="hidden-md-down" /></p>
+      <p class="c-block__desc">
+        <strong>商品説明文</strong><br />
+        <b>商品説明文</b><br />
+        商品説明文
+      </p>
+      <ul class="c-block__list">
+        <li>・商品</li>
+        <li>・商品</li>
+        <li>・商品</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row-l">
+    <div class="col-sm-6 col-lg-4">
+      <div class="c-block__price-row">
+        <div>
+          <p class="c-block__price-qty">1箱購入</p>
+          <div class="c-price"><strong>77,777</strong>円<sup>（税込）</sup></div>
+        </div>
+      </div>
+      <p class="c-block__price-point"><b>ショッピングポイント</b><strong>10%</strong></p>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="c-block__price-row">
+        <div>
+          <p class="c-block__price-qty">4個以上の購入で1個あたり</p>
+          <div class="c-price" data-type="sale"><strong>77,777</strong>円<sup>（税込）</sup></div>
+        </div>
+        <div class="c-block__price-off"> <span><strong>50</strong>%</span>OFF </div>
+      </div>
+      <p class="c-block__price-point"><b>ショッピングポイント</b><strong>10%</strong></p>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="c-block__price-row">
+        <div>
+          <p class="c-block__price-qty">8個以上の購入で1個あたり</p>
+          <div class="c-price" data-type="sale"><strong>77,777</strong>円<sup>（税込）</sup></div>
+        </div>
+        <div class="c-block__price-off"> <span><strong>50</strong>%</span>OFF </div>
+      </div>
+      <p class="c-block__price-point"><b>ショッピングポイント</b><strong>10%</strong></p>
+    </div>
+  </div>
+  <div class="c-block__foot" data-bg="lgray">
+    <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+      商品購入はこちら
+    </a>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: block - 2カラム
+category: modules/block
+---
+
+```html
+<div class="row-m">
+
+  <!-- 商品名 -->
+  <div class="col-md-6">
+    <div class="c-block" data-ico="new">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+      <div class="c-block__body">
+        <div class="c-block__badge-row">
+          <p class="c-block__badge" data-color="red">数量限定</p>
+          <p class="c-block__badge" data-color="red">期間限定</p>
+          <p class="c-block__badge" data-color="blue">ネスレ通販限定</p>
+        </div>
+        <p class="c-block__name">商品名<br class="hidden-md-down" /></p>
+        <p class="c-block__desc">
+          <strong>商品説明文</strong><br />
+          <b>商品説明文</b><br />
+          商品説明文
+        </p>
+        <ul class="c-block__list">
+          <li>・商品</li>
+          <li>・商品</li>
+          <li>・商品</li>
+        </ul>
+        <p class="c-block__price-before">▼単品価格 <del>99,999</del>円（税込）</p>
+        <div class="c-block__price-row">
+          <p class="c-block__price-qty">1箱</p>
+          <div>
+            <p class="c-block__price-head">特別価格</p>
+            <div class="c-price" data-type="sale"><strong>77,777</strong>円<sup>（税込）</sup></div>
+          </div>
+          <div class="c-block__price-off">
+            <span><strong>50</strong>%</span>OFF
+          </div>
+          <div class="c-block__price-fs">
+            <img src="../../../aigis_assets/img/ico_fs.png" alt="送料無料">
+          </div>
+        </div>
+        <p class="c-block__price-point"><b>ショッピングポイント</b><strong>10%</strong></p>
+      </div>
+      <div class="c-block__foot" data-bg="lgray">
+        <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+          商品購入はこちら
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 商品名 -->
+  <div class="col-md-6">
+    <div class="c-block" data-ico="new">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+      <div class="c-block__body">
+        <div class="c-block__badge-row">
+          <p class="c-block__badge" data-color="red">数量限定</p>
+          <p class="c-block__badge" data-color="red">期間限定</p>
+          <p class="c-block__badge" data-color="blue">ネスレ通販限定</p>
+        </div>
+        <p class="c-block__name">商品名<br class="hidden-md-down" /></p>
+        <div class="c-block__price-row">
+          <div>
+            <p class="c-block__price-qty">1箱購入</p>
+            <div class="c-price"><strong>77,777</strong>円<sup>（税込）</sup></div>
+          </div>
+        </div>
+        <div class="c-block__price-row">
+          <div>
+            <p class="c-block__price-qty">4個以上の購入で1個あたり</p>
+            <div class="c-price" data-type="sale"><strong>77,777</strong>円<sup>（税込）</sup></div>
+          </div>
+          <div class="c-block__price-off">
+            <span><strong>50</strong>%</span>OFF
+          </div>
+        </div>
+        <div class="c-block__price-row">
+          <div>
+            <p class="c-block__price-qty">15個以上の購入で1個あたり</p>
+            <div class="c-price" data-type="sale"><strong>77,777</strong>円<sup>（税込）</sup></div>
+          </div>
+          <div class="c-block__price-off">
+            <span><strong>50</strong>%</span>OFF
+          </div>
+          <div class="c-block__price-fs">
+            <img src="../../../aigis_assets/img/ico_fs.png" alt="送料無料">
+          </div>
+        </div>
+        <p class="c-block__price-point"><b>ショッピングポイント</b><strong>10%</strong></p>
+      </div>
+      <div class="c-block__foot" data-bg="lgray">
+        <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+          商品購入はこちら
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+```
+*/
+
+
+/*
+---
+name: block - 3カラム
+category: modules/block
+---
+
+```html
+<div class="row-m">
+
+  <!-- 商品名 -->
+  <div class="col-sm-6 col-lg-4">
+    <div class="c-block" data-ico="new">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+      <div class="c-block__body">
+        <p class="c-block__name">
+          商品名<br />
+          <small>商品名補足</small>
+        </p>
+        <div class="c-block__price-row">
+          <div>
+            <div class="c-price"><strong>77,777</strong>円<sup>（税込）</sup></div>
+          </div>
+        </div>
+        <p class="c-block__price-point"><b>ショッピングポイント</b><strong>10%</strong></p>
+        <div class="c-block__foot" data-bg="lgray">
+          <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+            商品購入はこちら
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 商品名 -->
+  <div class="col-sm-6 col-lg-4">
+    <div class="c-block" data-ico="new">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+      <div class="c-block__body">
+        <p class="c-block__name">
+          商品名<br />
+          <small>商品名補足</small>
+        </p>
+        <div class="c-block__price-row">
+          <div>
+            <div class="c-price" data-type="sale"><strong>77,777</strong>円<sup>（税込）</sup></div>
+          </div>
+          <div class="c-block__price-off">
+            <span><strong>50</strong>%</span>OFF
+          </div>
+        </div>
+        <p class="c-block__price-point"><b>ショッピングポイント</b><strong>10%</strong></p>
+      </div>
+      <div class="c-block__foot" data-bg="lgray">
+        <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+          商品購入はこちら
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 商品名 -->
+  <div class="col-sm-6 col-lg-4">
+    <div class="c-block" data-ico="new">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+      <div class="c-block__body">
+        <div class="c-block__badge-row">
+          <p class="c-block__badge" data-color="red">数量限定</p>
+          <p class="c-block__badge" data-color="red">期間限定</p>
+          <p class="c-block__badge" data-color="blue">ネスレ通販限定</p>
+        </div>
+        <p class="c-block__name">
+          商品名<br />
+          <small>商品名補足</small>
+        </p>
+        <div class="c-block__price-row">
+          <div>
+            <p class="c-block__price-qty">1箱購入</p>
+            <div class="c-price"><strong>77,777</strong>円<sup>（税込）</sup></div>
+          </div>
+        </div>
+        <div class="c-block__price-row">
+          <div>
+            <p class="c-block__price-qty">4個以上の購入で1個あたり</p>
+            <div class="c-price" data-type="sale"><strong>77,777</strong>円<sup>（税込）</sup></div>
+          </div>
+          <div class="c-block__price-off">
+            <span><strong>50</strong>%</span>OFF
+          </div>
+        </div>
+        <div class="c-block__price-row">
+          <div>
+            <p class="c-block__price-qty">15個以上の購入で1個あたり</p>
+            <div class="c-price" data-type="sale"><strong>77,777</strong>円<sup>（税込）</sup></div>
+          </div>
+          <div class="c-block__price-off">
+            <span><strong>50</strong>%</span>OFF
+          </div>
+        </div>
+        <p class="c-block__price-point"><b>ショッピングポイント</b><strong>10%</strong></p>
+      </div>
+      <div class="c-block__foot" data-bg="lgray">
+        <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+          商品購入はこちら
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+```
+*/
+
+
+/*
+---
+name: block - 3カラム（basic）
+category: modules/block
+---
+
+```html
+<div class="row-m">
+
+  <!-- 商品名 -->
+  <div class="col-sm-6 col-lg-4">
+    <div class="c-block" data-ico="new">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+      <div class="c-block__body">
+        <p class="c-block__name">
+          商品名<br />
+          <small>商品名補足</small>
+        </p>
+        <p class="c-block__desc">
+          <strong>商品説明文</strong><br />
+          <b>商品説明文</b><br />
+          商品説明文
+        </p>
+        <div class="c-block__price-row">
+          <div>
+            <p class="c-block__price"><strong>77,777</strong>円（税込）</p>
+          </div>
+        </div>
+        <div class="c-block__foot">
+          <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+            商品購入はこちら
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 商品名 -->
+  <div class="col-sm-6 col-lg-4">
+    <div class="c-block" data-ico="new">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+      <div class="c-block__body">
+        <p class="c-block__name">
+          商品名<br />
+          <small>商品名補足</small>
+        </p>
+        <p class="c-block__desc">
+          <strong>商品説明文</strong><br />
+          <b>商品説明文</b><br />
+          商品説明文
+        </p>
+        <div class="c-block__price-row">
+          <div>
+            <p class="c-block__price" data-type="sale"><strong>77,777</strong>円（税込）</p>
+          </div>
+        </div>
+      </div>
+      <div class="c-block__foot">
+        <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+          商品購入はこちら
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 商品名 -->
+  <div class="col-sm-6 col-lg-4">
+    <div class="c-block" data-ico="new">
+      <div class="c-block__img">
+        <img src="../../../aigis_assets/img/img_180x180.png" alt="">
+      </div>
+      <div class="c-block__body">
+        <p class="c-block__name">
+          商品名<br />
+          <small>商品名補足</small>
+        </p>
+        <p class="c-block__desc">
+          <strong>商品説明文</strong><br />
+          <b>商品説明文</b><br />
+          商品説明文
+        </p>
+        <div class="c-block__price-row">
+          <div>
+            <p class="c-block__price" data-type="sale"><strong>77,777</strong>円（税込）</p>
+          </div>
+        </div>
+      </div>
+      <div class="c-block__foot">
+        <a class="c-btn" data-type="orange_next" href="#" data-exhref="ec/**SKU**.html" data-ectrakid="ec_PU_**SKU**">
+          商品購入はこちら
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+```
+*/

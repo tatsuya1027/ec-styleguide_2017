@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="../../aigis_assets/css/highlight/okadia.css" rel="stylesheet">
+    <link href="../../aigis_assets/css/theme.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+  </head>
+<body>
+  <div class="aigis-container">
+    <div class="aigis-sidemenu">
+  <header class="aigis-header">
+    <a href="../../index.html">Styleguide</a>
+  </header>
+  <h2 class="aigis-sidemenu__heading">Category</h2>
+  <nav class="aigis-categoryList">
+    <ul data-path-depth="0"><li data-path-depth="0"><a href="..\..\category\mixins\index.html" data-tree-current>mixins</a></li><li data-path-depth="0"><a>modules</a><ul data-path-depth="1"><li data-path-depth="1"><a href="..\..\category\modules\block\index.html">block</a></li><li data-path-depth="1"><a href="..\..\category\modules\card\index.html">card</a></li></ul></li><li data-path-depth="0"><a>parts</a><ul data-path-depth="1"><li data-path-depth="1"><a href="..\..\category\parts\btn\index.html">btn</a></li><li data-path-depth="1"><a href="..\..\category\parts\price\index.html">price</a></li></ul></li><li data-path-depth="0"><a>structures</a><ul data-path-depth="1"><li data-path-depth="1"><a href="..\..\category\structures\grid\index.html">grid</a></li></ul></li><li data-path-depth="0"><a>utilities</a><ul data-path-depth="1"><li data-path-depth="1"><a href="..\..\category\utilities\spacing\index.html">spacing</a></li><li data-path-depth="1"><a href="..\..\category\utilities\text\index.html">text</a></li><li data-path-depth="1"><a href="..\..\category\utilities\visibility\index.html">visibility</a></li></ul></li><li data-path-depth="0"><a href="..\..\category\variables\index.html">variables</a></li></ul>
+  </nav>
+  <h2 class="aigis-sidemenu__heading">Tag</h2>
+  <nav class="aigis-tags aigis-tagList">
+    
+  </nav>
+  <h2 class="aigis-sidemenu__heading"><a href="../../color.html">All Colors</a></h2>
+</div>
+
+    <div class="aigis-contents">
+      <div class="aigis-contents__body">
+        
+<nav>
+  <h2 class="aigis-module__heading">Components</h2>
+  <ul class="aigis-moduleList">
+    <li class="aigis-moduleList__item">
+      <a href="#btn-base, btn-size">btn-base, btn-size</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#flex-position">flex-position</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#flex-row">flex-row</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#gradient">gradient</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#horizon">horizon</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#note">note</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#underline">underline</a>
+    </li>
+  </ul>
+</nav>
+<div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="btn-base, btn-size">
+      btn-base, btn-size
+    </h2>
+    <div class="aigis-module__filepath">
+      /..\..\aigis_assets\css\category\_mixins.scss
+    </div>
+    <ul class="aigis-tags">
+    </ul>
+    <div class="aigis-preview">
+  <a class="m-btn" href="#">
+  商品購入はこちら
+</a> <br /><br /> <a class="m-btn-large" href="#">
+  商品購入はこちら
+</a>
+<!--
+@mixin btn-base {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px #bbb;
+  background-color: #999;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+
+  @media #{map-get($max, sm)}{
+    background-size: 1.25rem;
+    font-feature-settings : "palt";
+  }
+
+  &:link {
+    text-decoration: none;
+  }
+}
+
+@mixin btn-size($max-width, $padding, $background-position, $background-size, $font-size) {
+  max-width: $max-width;
+  padding: $padding;
+  background-position: $background-position;
+  background-size: $background-size;
+  font-size: $font-size;
+}
+
+.m-btn {
+  @include btn-base;
+  @include btn-size(16rem, .75rem .5rem, right .5rem center, 1.3125rem, $px16);
+}
+.m-btn-large {
+  @include btn-base;
+  @include btn-size(24rem, .75rem .5rem, right .5rem center, 1.3125rem, $px24);
+}
+--></div>
+
+<pre><code class="language-html"><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-btn<span class="token punctuation" >"</span></span> <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+  商品購入はこちら
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >></span></span>
+
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span> <span class="token punctuation" >/></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span> <span class="token punctuation" >/></span></span>
+
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-btn-large<span class="token punctuation" >"</span></span> <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+  商品購入はこちら
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!--
+@mixin btn-base {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px #bbb;
+  background-color: #999;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+
+  @media #{map-get($max, sm)}{
+    background-size: 1.25rem;
+    font-feature-settings : "palt";
+  }
+
+  &amp;:link {
+    text-decoration: none;
+  }
+}
+
+@mixin btn-size($max-width, $padding, $background-position, $background-size, $font-size) {
+  max-width: $max-width;
+  padding: $padding;
+  background-position: $background-position;
+  background-size: $background-size;
+  font-size: $font-size;
+}
+
+.m-btn {
+  @include btn-base;
+  @include btn-size(16rem, .75rem .5rem, right .5rem center, 1.3125rem, $px16);
+}
+.m-btn-large {
+  @include btn-base;
+  @include btn-size(24rem, .75rem .5rem, right .5rem center, 1.3125rem, $px24);
+}
+--></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="flex-position">
+      flex-position
+    </h2>
+    <div class="aigis-module__filepath">
+      /..\..\aigis_assets\css\category\_mixins.scss
+    </div>
+    <ul class="aigis-tags">
+    </ul>
+    <div class="aigis-preview">
+  <div class="m-flex-position" data-align="center">
+    <p>中央寄せ</p>
+</div>
+<div class="m-flex-position" data-align="left">
+    <p>左寄せ</p>
+</div>
+<div class="m-flex-position" data-align="right">
+    <p>右寄せ</p>
+</div>
+<!--
+@mixin flex-position($horizontal:center, $vertical:center) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+.m-flex-position {
+  &[data-align="center"] { @include flex-position; }
+  &[data-align="left"] { @include flex-position(flex-start, center); }
+  &[data-align="right"] { @include flex-position(flex-end, center); }
+}
+--></div>
+
+<pre><code class="language-html"><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-flex-position<span class="token punctuation" >"</span></span> <span class="token attr-name" >data-align</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>center<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span><span class="token punctuation" >></span></span>中央寄せ<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-flex-position<span class="token punctuation" >"</span></span> <span class="token attr-name" >data-align</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>left<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span><span class="token punctuation" >></span></span>左寄せ<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-flex-position<span class="token punctuation" >"</span></span> <span class="token attr-name" >data-align</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>right<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span><span class="token punctuation" >></span></span>右寄せ<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!--
+@mixin flex-position($horizontal:center, $vertical:center) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+.m-flex-position {
+  &amp;[data-align="center"] { @include flex-position; }
+  &amp;[data-align="left"] { @include flex-position(flex-start, center); }
+  &amp;[data-align="right"] { @include flex-position(flex-end, center); }
+}
+--></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="flex-row">
+      flex-row
+    </h2>
+    <div class="aigis-module__filepath">
+      /..\..\aigis_assets\css\category\_mixins.scss
+    </div>
+    <ul class="aigis-tags">
+    </ul>
+    <div class="aigis-preview">
+  <div class="m-flex-row">
+    <div class="col-md-6">
+        <p style="background-color: #eee;">column1</p>
+    </div>
+    <div class="col-md-6">
+        <p style="background-color: #ccc;">column2</p>
+    </div>
+</div>
+<!--
+@mixin flex-row($gutters) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: ($gutters / -2);
+  margin-left: ($gutters / -2);
+
+  & > [class*="col"] {
+    padding-right: ($gutters / 2);
+    padding-left: ($gutters / 2);
+  }
+}
+
+.m-flex-row {
+  @include flex-row(1rem);
+}
+--></div>
+
+<pre><code class="language-html"><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-flex-row<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>col-md-6<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span><span class="token style-attr language-css" ><span class="token attr-name" > <span class="token attr-name" >style</span></span><span class="token punctuation" >="</span><span class="token attr-value" ><span class="token property" >background-color</span><span class="token punctuation" >:</span> <span class="token hexcode" >#eee</span><span class="token punctuation" >;</span></span><span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>column1<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>col-md-6<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span><span class="token style-attr language-css" ><span class="token attr-name" > <span class="token attr-name" >style</span></span><span class="token punctuation" >="</span><span class="token attr-value" ><span class="token property" >background-color</span><span class="token punctuation" >:</span> <span class="token hexcode" >#ccc</span><span class="token punctuation" >;</span></span><span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>column2<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!--
+@mixin flex-row($gutters) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: ($gutters / -2);
+  margin-left: ($gutters / -2);
+
+  &amp; > [class*="col"] {
+    padding-right: ($gutters / 2);
+    padding-left: ($gutters / 2);
+  }
+}
+
+.m-flex-row {
+  @include flex-row(1rem);
+}
+--></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="gradient">
+      gradient
+    </h2>
+    <div class="aigis-module__filepath">
+      /..\..\aigis_assets\css\category\_mixins.scss
+    </div>
+    <ul class="aigis-tags">
+    </ul>
+    <div class="aigis-preview">
+  <p class="m-gradient-x">グラデーション-x</p> <br />
+<p class="m-gradient-y">グラデーション-y</p> <br />
+<p class="m-gradient-x-3colors">グラデーション-x-3colors</p> <br />
+<p class="m-gradient-y-3colors">グラデーション-y-3colors</p> <br />
+<p class="m-gradient-radial">グラデーション-radial</p>
+<!--
+@mixin gradient-x($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+.m-gradient-x {
+  @include gradient-x(#eee, #333, 0%, 100%);
+}
+
+@mixin gradient-y($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+.m-gradient-y {
+  @include gradient-y(#eee, #333, 0%, 100%);
+}
+
+@mixin gradient-x-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) {
+  background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
+  background-repeat: no-repeat;
+}
+.m-gradient-x-3colors {
+  @include gradient-x-three-colors(#eee, #ff0000, 50%, #333);
+}
+
+@mixin gradient-y-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) {
+  background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
+  background-repeat: no-repeat;
+}
+.m-gradient-y-3colors {
+  @include gradient-y-three-colors(#eee, #ff0000, 50%, #333);
+}
+
+@mixin gradient-radial($inner-color: #555, $outer-color: #333) {
+  background-image: radial-gradient(circle, $inner-color, $outer-color);
+  background-repeat: no-repeat;
+}
+.m-gradient-radial {
+  @include gradient-radial(#ff0000, #eee);
+  padding: 5rem;
+}
+
+--></div>
+
+<pre><code class="language-html"><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-gradient-x<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>グラデーション-x<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span> <span class="token punctuation" >/></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-gradient-y<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>グラデーション-y<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span> <span class="token punctuation" >/></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-gradient-x-3colors<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>グラデーション-x-3colors<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span> <span class="token punctuation" >/></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-gradient-y-3colors<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>グラデーション-y-3colors<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span> <span class="token punctuation" >/></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-gradient-radial<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>グラデーション-radial<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!--
+@mixin gradient-x($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+.m-gradient-x {
+  @include gradient-x(#eee, #333, 0%, 100%);
+}
+
+@mixin gradient-y($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+.m-gradient-y {
+  @include gradient-y(#eee, #333, 0%, 100%);
+}
+
+@mixin gradient-x-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) {
+  background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
+  background-repeat: no-repeat;
+}
+.m-gradient-x-3colors {
+  @include gradient-x-three-colors(#eee, #ff0000, 50%, #333);
+}
+
+@mixin gradient-y-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) {
+  background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
+  background-repeat: no-repeat;
+}
+.m-gradient-y-3colors {
+  @include gradient-y-three-colors(#eee, #ff0000, 50%, #333);
+}
+
+@mixin gradient-radial($inner-color: #555, $outer-color: #333) {
+  background-image: radial-gradient(circle, $inner-color, $outer-color);
+  background-repeat: no-repeat;
+}
+.m-gradient-radial {
+  @include gradient-radial(#ff0000, #eee);
+  padding: 5rem;
+}
+
+--></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="horizon">
+      horizon
+    </h2>
+    <div class="aigis-module__filepath">
+      /..\..\aigis_assets\css\category\_mixins.scss
+    </div>
+    <ul class="aigis-tags">
+    </ul>
+    <div class="aigis-preview">
+  <p class="m-horizon">水平線</p>
+<!--
+@mixin horizon($size, $style, $color) {
+  display: flex;
+  align-items: center;
+
+  &:before,
+  &:after {
+    border-top: $size $style $color;
+    content: "";
+    display: inline;
+    flex-grow: 1;
+  }
+  &:before {
+    margin-right: 0.5em;
+  }
+  &:after {
+    margin-left: 0.5em;
+  }
+}
+
+.m-horizon {
+  @include horizon(1px, solid, #000);
+}
+--></div>
+
+<pre><code class="language-html"><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-horizon<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>水平線<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!--
+@mixin horizon($size, $style, $color) {
+  display: flex;
+  align-items: center;
+
+  &amp;:before,
+  &amp;:after {
+    border-top: $size $style $color;
+    content: "";
+    display: inline;
+    flex-grow: 1;
+  }
+  &amp;:before {
+    margin-right: 0.5em;
+  }
+  &amp;:after {
+    margin-left: 0.5em;
+  }
+}
+
+.m-horizon {
+  @include horizon(1px, solid, #000);
+}
+--></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="note">
+      note
+    </h2>
+    <div class="aigis-module__filepath">
+      /..\..\aigis_assets\css\category\_mixins.scss
+    </div>
+    <ul class="aigis-tags">
+    </ul>
+    <div class="aigis-preview">
+  <p class="m-note"> ※注意書き<br /> 注意書き </p>
+<!--
+@mixin note($font-size: $px12, $indent: 1em) {
+  font-size: $font-size;
+  padding-left: $indent;
+  text-indent: -($indent);
+}
+
+.m-note {
+  @include note;
+}
+--></div>
+
+<pre><code class="language-html"><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-note<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+  ※注意書き<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span> <span class="token punctuation" >/></span></span>
+  注意書き
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!--
+@mixin note($font-size: $px12, $indent: 1em) {
+  font-size: $font-size;
+  padding-left: $indent;
+  text-indent: -($indent);
+}
+
+.m-note {
+  @include note;
+}
+--></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="underline">
+      underline
+    </h2>
+    <div class="aigis-module__filepath">
+      /..\..\aigis_assets\css\category\_mixins.scss
+    </div>
+    <ul class="aigis-tags">
+    </ul>
+    <div class="aigis-preview">
+  <p class="m-underline"> テキストに<span>下線</span>を引く </p>
+<!--
+@mixin underline($size: 80%, $color: $cYellow) {
+  background: linear-gradient(transparent $size, $color 0%);
+}
+
+.m-underline span {
+  @include underline;
+}
+--></div>
+
+<pre><code class="language-html"><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-underline<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+  テキストに<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span><span class="token punctuation" >></span></span>下線<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >></span></span>を引く
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!--
+@mixin underline($size: 80%, $color: $cYellow) {
+  background: linear-gradient(transparent $size, $color 0%);
+}
+
+.m-underline span {
+  @include underline;
+}
+--></span>
+</code></pre>
+
+  </div>
+</div>
+
+
+        <footer class="aigis-footer">Last update at 2018/01/09 18:43</footer>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    jQuery(function($){
+      $(".aigis-preview + pre").hide();
+      $(".aigis-preview").css('cursor', 'pointer');
+      $(".aigis-preview").on("click", function() {
+        $(this).next().toggle();
+        $(this).toggleClass('is-active');
+      });
+    });
+  </script>
+</body>
+</html>

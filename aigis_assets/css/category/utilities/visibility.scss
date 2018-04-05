@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*
+---
+name: visibility
+category: utilities/visibility
+---
+
+hidden-(ブレイクポイント)-(以上 or 以下)
+
+```html
+<div class="hidden-group">
+  <p class="hidden-sm-up" style="background-color:red;">sm以上は非表示</p>
+  <p class="hidden-xs-down" style="background-color:lightblue;">xs以下は非表示</p>
+  <p class="hidden-md-up" style="background-color:green;">md以上は非表示</p>
+  <p class="hidden-sm-down" style="background-color:yellow;">sm以下は非表示</p>
+  <p class="hidden-lg-up" style="background-color:lightgreen;">lg以上は非表示</p>
+  <p class="hidden-md-down" style="background-color:pink;">md以下は非表示</p>
+</div>
+```
+*/
+
+.hidden-group p {
+  padding: .5rem;
+  font-size: $px24;
+}

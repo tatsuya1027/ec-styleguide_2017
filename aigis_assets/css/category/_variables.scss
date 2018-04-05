@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*
+---
+name: break-points
+category: variables
+---
+
+```html
+  <p>575px以下（～575px）: <b>@media #{map-get($max, sm)}{ //CSS }</b></p>
+  <p>576px以上（576px～）: <b>@media #{map-get($min, sm)}{ //CSS }</b></p>
+  <p>767px以下（～767px）: <b>@media #{map-get($max, md)}{ //CSS }</b></p>
+  <p>768px以上（768px～）: <b>@media #{map-get($min, md)}{ //CSS }</b></p>
+  <p>899px以下（～899px）: <b>@media #{map-get($max, lg)}{ //CSS }</b></p>
+  <p>900px以上（900px～）: <b>@media #{map-get($min, lg)}{ //CSS }</b></p>
+```
+
+*/
+
+
+/*
+---
+name: color
+category: variables
+---
+
+```html
+<div class="aigis-contents__body">
+  <h2 class="aigis-module__heading">color</h2>
+  <div class="aigis-colorPalette"><div class="aigis-colorPalette__color" style="background-color: #004793;"></div><div class="aigis-colorPalette__label"><b>$cBlue</b></div></div>
+  <div class="aigis-colorPalette"><div class="aigis-colorPalette__color" style="background-color: #c5a145;"></div><div class="aigis-colorPalette__label"><b>$cGold</b></div></div>
+  <div class="aigis-colorPalette"><div class="aigis-colorPalette__color" style="background-color: #32b7ee;"></div><div class="aigis-colorPalette__label"><b>$cLblue</b></div></div>
+  <div class="aigis-colorPalette"><div class="aigis-colorPalette__color" style="background-color: #f6f6f6;"></div><div class="aigis-colorPalette__label"><b>$cLgray</b></div></div>
+  <div class="aigis-colorPalette"><div class="aigis-colorPalette__color" style="background-color: #64a714;"></div><div class="aigis-colorPalette__label"><b>$cLgreen</b></div></div>
+  <div class="aigis-colorPalette"><div class="aigis-colorPalette__color" style="background-color: #ec520a;"></div><div class="aigis-colorPalette__label"><b>$cOrange</b></div></div>
+  <div class="aigis-colorPalette"><div class="aigis-colorPalette__color" style="background-color: #dd0000;"></div><div class="aigis-colorPalette__label"><b>$cRed</b></div></div>
+  <div class="aigis-colorPalette"><div class="aigis-colorPalette__color" style="background-color: #fff000;"></div><div class="aigis-colorPalette__label"><b>$cYellow</b></div></div>
+</div>
+```
+
+*/
+.aigis-colorPalette {
+  margin-top: 5px; }
+.aigis-colorPalette__color {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  width: 50%;
+  margin-right: 5px; }
+.aigis-colorPalette__label {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 40px; }
+
+
+/*
+---
+name: font-family
+category: variables
+---
+
+```html
+  <p class="ff-Oswald">Oswald: <b>$fOs</b></p>
+  <p class="ff-SanSerif">ゴシック体: <b>$SanSerif</b></p>
+  <p class="ff-Serif">明朝体: <b>$fSerif</b></p>
+```
+
+*/
+
+[class*="ff-"] {
+  font-size: $px24;
+}
+.ff-Oswald {
+  font-family: $fOs;
+}
+.ff-SanSerif {
+  font-family: $fSanSerif;
+}
+.ff-Serif {
+  font-family: $fSerif;
+}
+
+
+/*
+---
+name: font-size
+category: variables
+---
+
+```html
+  <p style="font-size:8px;">8px: <b>$px08</b></p>
+  <p style="font-size:10px;">10px: <b>$px10</b></p>
+  <p style="font-size:12px;">12px: <b>$px12</b></p>
+  <p style="font-size:14px;">14px: <b>$px14</b></p>
+  <p style="font-size:16px;">16px: <b>$px16</b></p>
+  <p style="font-size:18px;">18px: <b>$px18</b></p>
+  <p style="font-size:20px;">20px: <b>$px20</b></p>
+  <p style="font-size:21px;">21px: <b>$px21</b></p>
+  <p style="font-size:24px;">24px: <b>$px24</b></p>
+  <p style="font-size:28px;">28px: <b>$px28</b></p>
+  <p style="font-size:30px;">30px: <b>$px30</b></p>
+  <p style="font-size:32px;">32px: <b>$px32</b></p>
+  <p style="font-size:36px;">36px: <b>$px36</b></p>
+  <p style="font-size:48px;">48px: <b>$px48</b></p>
+```
+
+*/

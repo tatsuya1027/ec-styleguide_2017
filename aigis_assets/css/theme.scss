@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* =========================================================================
+   variables
+========================================================================= */
+@import '../../../../_dist/common/variables';
+
+// コンポーネント画像パス
+$compPath: "../img/";
+
+
+/* =========================================================================
+   mixins
+========================================================================= */
+@import '../../../../_dist/bootstrap-4.0.0-alpha.6-scss/mixins';
+@import '../../../../_dist/common/mixins';
+
+
+/* =========================================================================
+   structures - 構造部分を定義(bootstrap)
+========================================================================= */
+@import '../../../../_dist/common/structures';
+
+
+/* =========================================================================
+   base - 土台部分を定義(reset)
+========================================================================= */
+@import '../../../../_dist/common/base';
+
+
+/* =========================================================================
+   components - 共通コンポーネントを定義
+========================================================================= */
+// modulues
+@import '../../../../_dist/common/components/modules/block';
+@import '../../../../_dist/common/components/modules/card';
+
+// parts
+@import '../../../../_dist/common/components/parts/btn';
+@import '../../../../_dist/common/components/parts/price';
+
+
+/* =========================================================================
+   utilities - 汎用的なスタイルを定義
+========================================================================= */
+// margin, padding
+@import '../../../../_dist/bootstrap-4.0.0-alpha.6-scss/utilities/spacing';
+
+// text-align
+@import '../../../../_dist/bootstrap-4.0.0-alpha.6-scss/utilities/text';
+
+// hidden
+@import '../../../../_dist/bootstrap-4.0.0-alpha.6-scss/utilities/visibility';
+
+
+/* =========================================================================
+   aigis - aigis用CSS
+========================================================================= */
+@import 'aigis';
+@import 'category/mixins';
+@import 'category/variables';
+@import 'category/modules/block';
+@import 'category/modules/card';
+@import 'category/parts/btn';
+@import 'category/parts/price';
+@import 'category/structures/grid';
+@import 'category/utilities/spacing';
+@import 'category/utilities/text';
+@import 'category/utilities/visibility';

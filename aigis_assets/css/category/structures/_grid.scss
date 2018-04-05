@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/*
+---
+name: column - 2カラム
+category: structures/grid
+---
+
+```html
+<div class="row-0">
+  <div class="col-md-6">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-md-6">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: column - 3カラム
+category: structures/grid
+---
+
+```html
+<div class="row-0">
+  <div class="col-sm-6 col-lg-4">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-sm-6 col-lg-4">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+  <div class="col-sm-6 col-lg-4">
+    <p style="background-color: #aaa;">column3</p>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: column - 4カラム
+category: structures/grid
+---
+
+```html
+<div class="row-0">
+  <div class="col-sm-6 col-lg-3">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <p style="background-color: #aaa;">column3</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <p style="background-color: #888;">column4</p>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: column - 5カラム
+category: structures/grid
+---
+
+```html
+<div class="row-0">
+  <div class="col-sm-6 col-md-4 col-lg-2p4">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-2p4">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-2p4">
+    <p style="background-color: #aaa;">column3</p>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-2p4">
+    <p style="background-color: #888;">column4</p>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-2p4">
+    <p style="background-color: #666;">column5</p>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: column - 6カラム
+category: structures/grid
+---
+
+```html
+<div class="row-0">
+  <div class="col-sm-6 col-md-4 col-lg-2">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-2">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-2">
+    <p style="background-color: #aaa;">column3</p>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-2">
+    <p style="background-color: #888;">column4</p>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-2">
+    <p style="background-color: #666;">column5</p>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-2">
+    <p style="background-color: #444;">column6</p>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: row - 0（0rem / 0px）
+category: structures/grid
+---
+
+```html
+<div class="row-0">
+  <div class="col-md-6">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-md-6">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: row - small-gutter（0.5rem / 8px）
+category: structures/grid
+---
+
+```html
+<div class="row-s">
+  <div class="col-md-6">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-md-6">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: row - small~middle-gutter（0.75rem / 12px）
+category: structures/grid
+---
+
+```html
+<div class="row-sm">
+  <div class="col-md-6">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-md-6">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: row - middle-gutter（1rem / 16px）
+category: structures/grid
+---
+
+```html
+<div class="row-m">
+  <div class="col-md-6">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-md-6">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: row - middle~large-gutter（1.25rem / 20px）
+category: structures/grid
+---
+
+```html
+<div class="row-ml">
+  <div class="col-md-6">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-md-6">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+</div>
+```
+*/
+
+
+/*
+---
+name: row - large-gutter（1.5rem / 24px）
+category: structures/grid
+---
+
+```html
+<div class="row-l">
+  <div class="col-md-6">
+    <p style="background-color: #eee;">column1</p>
+  </div>
+  <div class="col-md-6">
+    <p style="background-color: #ccc;">column2</p>
+  </div>
+</div>
+```
+*/
